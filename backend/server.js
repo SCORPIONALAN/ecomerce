@@ -9,10 +9,11 @@ app.get("/", (req, res) => {
 
 //middleware que permite parsear las peticiones
 app.use(express.json());
+const port = process.env.PORT || 5000;
 
 app.use("/api/productos", productRoutes);
 
-app.listen(5000,() =>{
+app.listen(port, () =>{
     connectDB();
-    console.log("server started at http://localhost:5000")
+    console.log("server started at http://localhost:" + port)
 })

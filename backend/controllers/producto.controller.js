@@ -31,12 +31,15 @@ export const postProducts = async (req, res) => {
 
 export const deleteProducts = async (req, res) => {
     const {id} = req.params;
+    if(!mongoose.Types.ObjectId.isValid(id)){
+        return res.status(404).json({success:false, message: "Producto no encontrado"});
+    }
     try{
         await Producto.findByIdAndDelete(id);
         res.status(200).json({success: true, message: "Producto eliminado correctamente"});
     }catch(error){
         console.error("Error al crear el producto", error.message);
-        res.status(404).json({success:false, message: "Producto no encontrado"});
+        res.status(500).json({success:false, message: "Error del servidor"});
     }
 };
 
