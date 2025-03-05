@@ -22,3 +22,4 @@ Y asi logramos que ambas cosas como el front como el back trabajen bajo el mismo
 #### NODE_ENV en entornos windows no sirve, asi que tenemos que descargar cross-env. En el despliegue como render.com no es un servidor windows tenemos que quitarlo de los scripts
 # Resultado final
 https://scorpion-ecommerce-v1.onrender.com
+### Nota: Es una version gratuita por lo que muchas veces el link no respondera bien, asi que tienes que estar recargando hasta que se muestre la pagina web
