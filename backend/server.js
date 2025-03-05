@@ -11,7 +11,7 @@ app.get("/", (req, res) => {
 app.use(express.json());
 const port = process.env.PORT || 5000;
 
-app.use("/api/productos", productRoutes);
+app.use("/api/products", productRoutes);
 
 app.listen(port, () =>{
     connectDB();
