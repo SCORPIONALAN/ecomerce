@@ -19,4 +19,6 @@ De igual forma dentro del ProductoCard.jsx creamos las funciones correspondiente
 Primero que nada tenemos que convertir nuestro react en un componente estatico, para ello, ejecutaremos en la terminal de frontend npm run build, una vez cargado, nos vamos a la configuracion del servidor, usamos el entorno de produccion para mandar de respuesta nuestro react.
 Y asi logramos que ambas cosas como el front como el back trabajen bajo el mismo puerto
 
-#### NODE_ENV en entornos windows no sirve, asi que tenemos que descargar cross-env
+#### NODE_ENV en entornos windows no sirve, asi que tenemos que descargar cross-env. En el despliegue como render.com no es un servidor windows tenemos que quitarlo de los scripts
+# Resultado final
+https://scorpion-ecommerce-v1.onrender.com
